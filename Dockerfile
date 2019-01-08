@@ -29,6 +29,7 @@ ENV PATH=/opt/python27/bin:${PATH}
 # Install pip
 WORKDIR /tmp
 RUN python get-pip.py
+RUN pip install --upgrade setuptools && pip install --upgrade pip
 
 
 ### References
